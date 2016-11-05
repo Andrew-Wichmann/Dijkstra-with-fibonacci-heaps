@@ -1,13 +1,13 @@
-package Dijkstra;
+package dijkstra;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class nodeTest {
+public class NodeTest {
 
 	private static final int SET_DEGREE_TEST_DEGREE = 9;
-	node testNode = new node();
+	Node testNode = new Node();
 	
 	@Test
 	public void test_initialization() {

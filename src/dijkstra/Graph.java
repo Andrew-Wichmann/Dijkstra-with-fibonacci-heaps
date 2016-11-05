@@ -1,9 +1,9 @@
-package Dijkstra;
+package dijkstra;
 import java.lang.Math;
 
 public class Graph {
 	private int MAX_DISTANCE_LENGTH = 100;
-	protected node[] nodes;
+	protected Node[] nodes;
 	protected int[][] edges;
 	
 	//an empty instantiation of a graph will be completely empty
@@ -20,12 +20,12 @@ public class Graph {
 		initializeEdges(maxDegree, directed);
 	}
 
-	protected node nodeFactory() {
-		return new node();
+	protected Node nodeFactory() {
+		return new Node();
 	}
 
-	protected node[] setOfNodesFactory(int graphSize) {
-		node[] returnSet = new node[graphSize];
+	protected Node[] setOfNodesFactory(int graphSize) {
+		Node[] returnSet = new Node[graphSize];
 		for(int i = 0; i < graphSize; i++){
 			returnSet[i]=nodeFactory();
 		}
@@ -64,7 +64,7 @@ public class Graph {
 		
 	}
 
-	protected int generateRandomNumberOfEdges(int maxDegree, node node) {
+	protected int generateRandomNumberOfEdges(int maxDegree, Node node) {
 		//The number of edge must not be more than the maxDegree specified by the user
 		//The maxDegree must be subtracted from the current degree of the node to ensure
 		//the max is not exceeded due to previous rounds that generate edges to this node.
@@ -84,7 +84,7 @@ public class Graph {
 	*/
 	
 	//getters and setters for the graph
-	public node[] getNodes(){
+	public Node[] getNodes(){
 		return nodes;
 	}
 	

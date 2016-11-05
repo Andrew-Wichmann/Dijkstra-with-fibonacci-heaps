@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author spectre
- *
- */
-package Dijkstra;

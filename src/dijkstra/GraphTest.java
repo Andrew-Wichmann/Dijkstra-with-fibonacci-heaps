@@ -1,4 +1,4 @@
-package Dijkstra;
+package dijkstra;
 
 import static org.junit.Assert.*;
 
@@ -31,7 +31,7 @@ public class GraphTest{
 	@Test
 	public void test_that_a_node_gets_initialized() {
 		testGraph = new Graph();
-		node testNode = testGraph.nodeFactory();
+		Node testNode = testGraph.nodeFactory();
 		assertNotNull(testNode);
 		assertEquals(0, testNode.degree);
 	}
@@ -41,7 +41,7 @@ public class GraphTest{
 		testGraph = new Graph();
 		testGraph.nodes = testGraph.setOfNodesFactory(NUMBER_OF_NODES_IN_TESTS);
 		for(int i = 0; i < NUMBER_OF_NODES_IN_TESTS; i++){
-			node selectedNode = testGraph.nodes[i];
+			Node selectedNode = testGraph.nodes[i];
 			assertNotNull(selectedNode);
 			assertEquals(0, selectedNode.degree);
 		}

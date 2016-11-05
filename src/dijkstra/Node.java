@@ -1,11 +1,11 @@
-package Dijkstra;
+package dijkstra;
 
-public class node {
+public class Node {
 	protected int degree;
-	public node(){
+	public Node(){
 		degree = 0;
 	}
-	public node(int degree){
+	public Node(int degree){
 		this.degree = degree;
 	}
 	
